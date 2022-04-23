@@ -1,5 +1,6 @@
 .form-layout {
-    width: 600px;
+    width: 100%;
+    max-width: 604px;
     height: 702px;
     left: 131px;
     top: 564px;
@@ -11,7 +12,7 @@
 }
 
 .form-header {
-    width: 600px;
+    width: 100%;
     height: 130px;
     left: 131px;
     top: 564px;
@@ -119,7 +120,62 @@ input[type='radio']:checked {
     right: -60px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
+    .form-layout {
+        margin-left: 18px;
+        height: 600px;
+        max-width: 90%;
+    }
+    .form-content {
+        height: 75%;
+    }
+    .form-header div {
+        font-size: 140%;
+        font-weight: bold;
+        line-height: 32px;
+    }
+    .form-label i {
+        font-size: 100%;
+    }
+    .form-input {
+        height: 80%;
+        font-size: 100%;
+        padding: 0 10px;
+    }
+    input[type='radio'] {
+        margin-right: 5px !important;
+        outline: 2px solid #57B3FF;
+        border: 2px solid white;
+        width: 16px;
+        height: 16px;
+    }
+    .radio-group {
+        font-size: 80%;
+
+    }
+    #price {
+        font-size: 150% !important;
+    }
+    #submit-btn {
+        height: 56px;
+    }
+    #submit-btn div {
+        font-size: 24px;
+    }
+    .error-notification {
+        font-size: 80% !important;
+    }
+    .form-phone,.form-phone-background {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .form-layout {
+        margin-left: 9%;
+        height: 700px;
+        max-width: 70%;
+    }
     .form-phone,.form-phone-background {
         display: none;
     }

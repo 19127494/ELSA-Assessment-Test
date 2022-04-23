@@ -54,3 +54,29 @@ window.onclick = function(event) {
         location.reload();
     }
 }
+
+// if ($(window).width() > 700) {
+//     $('#4p').addClass('scene');
+// } else {
+//     $('#4p').removeClass('scene');
+// }
+
+$(window).resize(function() {
+    var width = $(window).width();
+
+    if (width < 700) {
+        $('#4p').removeClass('scene');
+    }
+    else {
+        $('#4p').addClass('scene');
+    }
+
+    if (width < 1600){
+        $('.phone-scene').addClass("col-md-6")
+        $('.phone-scene').removeClass("col-lg-3")
+    }
+    else {
+        $('.phone-scene').addClass("col-lg-3")
+        $('.phone-scene').removeClass("col-md-6")
+    }
+});

@@ -71,3 +71,9 @@
     padding: 2px 16px;
     color: white;
 }
+
+@media screen and (max-width: 800px){
+    .success-box-content {
+        width: 80%;
+    }
+}

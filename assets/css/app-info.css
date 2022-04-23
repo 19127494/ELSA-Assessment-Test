@@ -14,19 +14,49 @@
 .scene {
     max-width: 100%;
     margin-bottom: 20px;
-    padding: 0 15%;
+    padding: 0 10%;
 }
 
 .scene-text {
+    padding: 0 10%;
     margin-top: 30px;
     font-size: 24px;
-}
-
-.scene-normal-text {
-
+    text-align: justify;
 }
 
 .scene-blue-text {
     color: #0bbae7;
     font-weight: bold;
+}
+
+.sec-regist-btn {
+    background: linear-gradient(80.25deg, rgba(0, 178, 127, 1) 0%, rgba(4, 187, 229, 1) 100%);
+    width: 20%;
+    border-radius: 50px
+}
+
+@media screen and (max-width: 800px){
+    .header {
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .sub-header {
+        font-size: 24px;
+    }
+    .scene-text {
+        margin-top: 15px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        padding: 0 50px;
+        text-align: center;
+    }
+    .sec-regist-btn {
+        width: 65% !important;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .sec-regist-btn {
+        width: 40%;
+    }
 }

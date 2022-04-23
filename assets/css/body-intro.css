@@ -59,9 +59,33 @@
     left: 30px;
 }
 
-@media screen and (max-width: 600px){
-    .intro-phone {
+@media screen and (max-width: 800px){
+    #body-intro {
+        height: 360px;
+    }
+    .intro-phone-background,.intro-phone {
         display: none;
+    }
+    .body-intro-content {
+        flex-direction: column;
+    }
+    .body-intro-header {
+        font-size: 240%;
+        line-height: 36px;
+    }
+    .slogan {
+        font-size: 150%;
+    }
+    .regist-btn {
+        width: 214px;
+        height: 48px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .left-square,.right-square {
+        opacity: 0.5;
+        z-index: -1;
     }
 }
 
