@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/body-intro.css">
+    <link rel="stylesheet" href="./assets/css/register-form.css">
+    <link rel="stylesheet" href="./assets/css/app-info.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
 
     <!-- Boostrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <!-- Header Start Here -->
-    <header>
+    <header class="d-flex justify-content-center align-items-center">
         <div class="header-title">
             <div class="elsa-icon header-icon"></div>
             <div class="letter-e"></div>
@@ -23,7 +32,7 @@
         </div>
     </header>
     <!-- Body Intro Start Here -->
-    <div class="body-intro position-relative">
+    <div id="body-intro" class="position-relative">
         <img class="left-square position-absolute" src="./assets/images/left-square.png" alt="">
         <div class="body-intro-content h-100 d-flex justify-content-around">
             <div class="intro-text mt-5 h-75 d-flex flex-column justify-content-around text-center">
@@ -33,7 +42,7 @@
                 <div class="slogan">
                     Với ELSA Speak - Ai Cũng Có Thể Nói Tiếng Anh Hay!
                 </div>
-                <a class="regist-btn align-self-center d-flex align-items-center justify-content-center">
+                <a class="regist-btn align-self-center d-flex align-items-center justify-content-center" href="#register-form">
                     <div>Đăng ký ngay</div>
                 </a>
             </div>
@@ -45,7 +54,133 @@
         <img class="right-square position-absolute" src="./assets/images/right-square.png" alt="">
     </div>
 
-    
+    <!-- Register Form Start Here -->
+    <div id="register-form" class="position-relative">
+        <div class="h-100 d-flex align-items-center justify-content-around">
+            <form class="form-layout">
+                <div class="form-header d-flex align-items-center justify-content-center">
+                    <div>CÙNG ỨNG DỤNG ELSA<br>NÓI TIẾNG ANH “THẢ GA”</div>
+                </div>
+                <div class="form-content d-flex flex-column justify-content-around">
+                    <div>
+                        <div class="form-label mb-2">
+                            <i class="fa fa-user-o"> Họ tên *</i>
+                        </div>
+                        <input type="text" class="form-input" id="name-field">
+                    </div>
+                    <div>
+                        <div class="form-label mb-2">
+                            <i class="fa fa-phone"> Số điện thoại *</i>
+                        </div>
+                        <input type="text" class="form-input" id="phone-number-field">
+                    </div>
+                    <div>
+                        <div class="form-label mb-2">
+                            <i class="fa fa-envelope-o"> Email *</i>
+                        </div>
+                        <input type="text" class="form-input" id="email-field">
+                    </div>
+                    <div class="radio-group d-flex flex-row justify-content-between w-100">
+                        <div class="radio-btn text-dark d-flex align-items-center">
+                            <input type="radio" name="package-type" id="type-1" class="mr-4">
+                            <span> Gói học 1 năm</span>
+                        </div>
+                        <div class="radio-btn text-dark d-flex align-items-center">
+                            <input type="radio" name="package-type" id="type-2" class="mr-4">
+                            <span> Gói trọn đời</span>
+                        </div>
+                    </div>
+                    <div id="price" class="text-center">
+                        989.000 VND
+                    </div>
+                    <div id="error-label"></div>
+                    <div id="submit-btn" class="align-self-center d-flex align-items-center justify-content-center">
+                        <div>GỬI ĐĂNG KÝ</div>
+                    </div>
+                </div>
+            </form>
+            <div class="form-image align-self-center position-relative">
+                <img class="form-phone-background position-relative" src="./assets/images/form-background.png" alt="">
+                <img class="form-phone position-absolute" src="./assets/images/form-phone.png" alt="">
+            </div>
+        </div>
+        <img class="form-logo position-absolute" src="./assets/images/form-logo.png" alt="">
+    </div>
+
+    <!-- App Info Start Here -->
+    <div id="app-info" class="py-5">
+        <div class="section-title mb-5">
+            <h2 class="header mb-4">CÁ NHÂN HOÁ LỘ TRÌNH HỌC</h2>
+            <div class="sub-header">
+                Làm bài kiểm tra đầu vào với ELSA trong 5 phút và bạn sẽ có:
+            </div>
+        </div>
+
+        <div id="4p" class="row scene">
+            <div class="phone-scene col-lg-3 d-flex flex-column">
+                <div class="d-flex justify-content-center">
+                    <img class="" src="./assets/images/app-scene-01.png" alt="">
+                </div>
+                <p class="scene-text">
+                    <span class="scene-normal-text">Trí tuệ nhân tạo trả về bạn số điểm</span>
+                    <Span class="scene-blue-text">“CHUẨN BẢN XỨ"</Span>
+                </p>
+            </div>
+            <div class="phone-scene col-lg-3 d-flex flex-column">
+                <div class="d-flex justify-content-center">
+                    <img class="" src="./assets/images/app-scene-02.png" alt="">
+                </div>
+                <p class="scene-text">
+                    <span class="scene-blue-text">NGAY LẬP TỨC</span>
+                    <Span class="scene-normal-text">, bạn biết mình phát âm sai ở đâu qua những gam màu trực quan sinh động.</Span>
+                </p>
+            </div>
+            <div class="phone-scene col-lg-3 d-flex flex-column">
+                <div class="d-flex justify-content-center">
+                    <img class="" src="./assets/images/app-scene-03.png" alt="">
+                </div>
+                <p class="scene-text">
+                    <span class="scene-blue-text">CÔNG NGHỆ NHẬN DIỆN</span>
+                    <Span class="scene-normal-text">giọng nói chuẩn đến từng âm tiết.</Span>
+                </p>
+            </div>
+            <div class="phone-scene col-lg-3 d-flex flex-column">
+                <div class="d-flex justify-content-center">
+                    <img class="" src="./assets/images/app-scene-04.png" alt="">
+                </div>
+                <p class="scene-text">
+                    <span class="scene-normal-text">ELSA sẽ </span>
+                    <span class="scene-blue-text">LẬP LỘ TRÌNH HỌC CÁ NHÂN HOÁ</span>
+                    <Span class="scene-normal-text"> dựa trên các chỉ số bài kiểm tra đầu vào của bạn.</Span>
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <a class="regist-btn sec-regist-btn d-flex align-items-center justify-content-center" href="#register-form">
+                <div>ĐĂNG KÝ NGAY</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="success-box">
+
+        <!-- Modal content -->
+        <div class="success-box-content">
+            <div class="success-box-header">
+                <span class="close-btn">&times;</span>
+                <h2>Thông báo</h2>
+            </div>
+            <div class="success-box-body">
+                <p>Đã đăng ký thành công tài khoản Elsa</p>
+            </div>
+            <div class="success-box-footer">
+                <div id="ok-btn" class="btn btn-primary w-25 float-right">OK</div>
+            </div>
+        </div>
+
+    </div>
 
     <script src="./assets/js/main.js"></script>
 
