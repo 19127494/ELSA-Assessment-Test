@@ -1,0 +1,141 @@
+.form-layout {
+    width: 600px;
+    height: 702px;
+    left: 131px;
+    top: 564px;
+
+    background: #FFFFFF;
+    box-shadow: 5px 5px 8px rgba(12, 36, 64, 0.3);
+    border-radius: 20px;
+}
+
+.form-header {
+    width: 600px;
+    height: 130px;
+    left: 131px;
+    top: 564px;
+
+    background: linear-gradient(81.84deg, #49DCE1 1.09%, #39A3FB 96.86%);
+    box-shadow: 0 4px 8px rgba(46, 153, 241, 0.5);
+    border-radius: 15px 15px 0 0;
+}
+
+.form-header div {
+
+    font-family: 'BrownVN', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 49px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.form-content {
+    color: #06BAE8;
+}
+
+.form-label i{
+    font-size: 24px;
+}
+
+.form-input {
+    width: 536px;
+    height: 60px;
+
+    background: #FFFFFF;
+    border: 2px solid #57B3FF;
+    box-sizing: border-box;
+}
+
+.radio-btn input{
+    display: none;
+}
+
+.radio-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.radio-btn span {
+    position: relative;
+    line-height: 22px;
+}
+
+.radio-btn span:before,
+.radio-btn span:after {
+    content: '';
+}
+
+.radio-btn span:before {
+    border: 1px solid #222021;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.radio-btn span:after {
+    background: #222021;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    transition: 300ms;
+    opacity: 0;
+}
+
+.radio-btn input:checked+span:after {
+    opacity: 1;
+}
+
+.submit-btn {
+    width: 530px;
+    height: 74px;
+
+    border: none;
+    background: linear-gradient(80.25deg, #3DFFC8 1.31%, #40F6CF 15.32%, #49DCE1 38.61%, #57B3FF 68.19%);
+    box-shadow: 0 4px 8px rgba(46, 153, 241, 0.5);
+    border-radius: 20px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+.submit-btn div {
+    font-family: 'BrownVN', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.form-image {
+    margin-top: 135px;
+    top: 0;
+    left: 0;
+}
+
+.form-background {
+    top: 0;
+    left: 0;
+}
+
+.form-phone {
+    top: -66px;
+    right: -60px;
+}
+
+.form-logo {
+    top: 30px;
+    right: 0;
+}

@@ -24,7 +24,7 @@
 
     border: none;
     background: linear-gradient(80.25deg, #3DFFC8 1.31%, #40F6CF 15.32%, #49DCE1 38.61%, #57B3FF 68.19%);
-    box-shadow: 0px 4px 8px rgba(46, 153, 241, 0.5);
+    box-shadow: 0 4px 8px rgba(46, 153, 241, 0.5);
     border-radius: 20px;
 }
 
