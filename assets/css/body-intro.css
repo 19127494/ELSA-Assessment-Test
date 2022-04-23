@@ -59,6 +59,12 @@
     left: 30px;
 }
 
+@media screen and (max-width: 600px){
+    .intro-phone {
+        display: none;
+    }
+}
+
 .left-square {
     top: 200px;
     left: 0;

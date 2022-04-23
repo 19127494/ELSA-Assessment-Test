@@ -7,6 +7,7 @@
     background: #FFFFFF;
     box-shadow: 5px 5px 8px rgba(12, 36, 64, 0.3);
     border-radius: 20px;
+    z-index: 2;
 }
 
 .form-header {
@@ -25,7 +26,7 @@
     font-family: 'BrownVN', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 40px;
     line-height: 49px;
     text-align: center;
 
@@ -33,27 +34,29 @@
 }
 
 .form-content {
-    height: 80%;
+    height: 82%;
 
     padding: 0 40px;
     color: #06BAE8;
 }
 
 .form-label i{
-    font-size: 33px;
+    font-size: 24px;
 }
 
 .form-input {
     width: 100%;
-    height: 60px;
+    height: 48px;
 
+    padding: 0 20px;
+    font-size: 24px;
     background: #FFFFFF;
     border: 2px solid #57B3FF;
     box-sizing: border-box;
 }
 
 .radio-group {
-    font-size: 33px;
+    font-size: 30px;
 }
 
 input[type='radio'] {
@@ -62,15 +65,19 @@ input[type='radio'] {
     background: white;
     outline: 2px solid #57B3FF;
     border: 5px solid white;
-    width: 33px;
-    height: 33px;
+    width: 28px;
+    height: 28px;
+}
+
+input[type='radio']:hover {
+    cursor: pointer;
 }
 
 input[type='radio']:checked {
     background: #57B3FF;
 }
 
-.submit-btn {
+#submit-btn {
     width: 100%;
     height: 74px;
 
@@ -80,11 +87,11 @@ input[type='radio']:checked {
     border-radius: 20px;
 }
 
-.submit-btn:hover {
+#submit-btn:hover {
     cursor: pointer;
 }
 
-.submit-btn div {
+#submit-btn div {
     font-family: 'BrownVN', serif;
     font-style: normal;
     font-weight: 700;
@@ -102,7 +109,7 @@ input[type='radio']:checked {
     left: 0;
 }
 
-.form-background {
+.form-phone-background {
     top: 0;
     left: 0;
 }
@@ -112,7 +119,26 @@ input[type='radio']:checked {
     right: -60px;
 }
 
+@media screen and (max-width: 600px){
+    .form-phone,.form-phone-background {
+        display: none;
+    }
+}
+
 .form-logo {
     top: 30px;
     right: 0;
+}
+
+#price {
+    display: none;
+    color: #03B382;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.error-notification {
+    font-size: 24px;
+    color: red;
+    margin-bottom: -20px;
 }
