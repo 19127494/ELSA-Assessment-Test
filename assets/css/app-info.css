@@ -1,0 +1,32 @@
+.section-title {
+    text-align: center;
+    color: #606060;
+}
+
+.header {
+    font-size: 56px;
+}
+
+.sub-header {
+    font-size: 26px;
+}
+
+.scene {
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 0 15%;
+}
+
+.scene-text {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.scene-normal-text {
+
+}
+
+.scene-blue-text {
+    color: #0bbae7;
+    font-weight: bold;
+}
